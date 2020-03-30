@@ -5,7 +5,6 @@ const renderToString = require('preact-render-to-string')
 const { html } = require('@architect/views/modules/vendor/preact.js')
 const Home = require('@architect/views/modules/pages/home.js').default
 
-/** plain 'ol lambda function */
 exports.handler = async function http(req) {
   let name = 'entry/home.js'
   let entry = await lookup(name)
