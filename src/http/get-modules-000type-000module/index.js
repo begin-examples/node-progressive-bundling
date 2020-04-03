@@ -15,7 +15,7 @@ exports.handler = async function http(req) {
     if (debug) {
       return waterfall(req)
     } else {
-      // check the cache manifest
+      // check to see if file is in cache
       let file = await read({ name })
       // if the file is not found bundle it
       if (!file) {

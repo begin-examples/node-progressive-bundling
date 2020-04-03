@@ -5,7 +5,6 @@ const data = require('@begin/data')
 const path = require('./cache-path')
 
 module.exports = async function read({ name }) {
-
   // check the cache manifest
   let cache = await data.get({
     table: 'module-cache',
@@ -16,5 +15,7 @@ module.exports = async function read({ name }) {
   if (cache == false && existsSync(path({ name })) == false)
       throw ReferenceError(`not_found: ${ name }`)
 
-  return cache? cache.file : false
+  return cache
+    ? cache.file
+    : false
 }

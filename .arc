@@ -7,6 +7,7 @@ jump-nwl
 
 @static
 folder public
+
 @http
 get /
 get /about

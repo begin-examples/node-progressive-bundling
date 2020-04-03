@@ -5,7 +5,7 @@
     "test": "NODE_ENV=testing tape test/*-test.js | tap-spec"
   },
   "dependencies": {
-    "@architect/sandbox": "^1.7.2",
+    "@architect/sandbox": "^1.9.1",
     "@begin/data": "^1.2.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.13.2"
