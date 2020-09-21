@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@begin/data": "^1.2.0",
+    "@begin/data": "latest",
     "esm": "^3.2.25",
     "preact": "^10.3.4",
     "preact-render-to-string": "^5.1.4"
