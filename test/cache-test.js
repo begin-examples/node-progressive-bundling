@@ -2,9 +2,10 @@ let test = require('tape')
 let sandbox = require('@architect/sandbox')
 let data = require('@begin/data')
 
-test('before', async t => {
-  await sandbox.start()
-  t.end()
+test('Start the Sandbox', async t => {
+  t.plan(1)
+  let result = await sandbox.start()
+  t.equal(result, 'Sandbox successfully started')
 })
 
 test('env', async t => {
@@ -20,7 +21,8 @@ test('env', async t => {
   console.log(foo)
 })
 
-test('after', async t => {
-  await sandbox.end()
-  t.end()
+test('Shut down the Sandbox', async t => {
+  t.plan(1)
+  let result = await sandbox.end()
+  t.equal(result, 'Sandbox successfully shut down')
 })
