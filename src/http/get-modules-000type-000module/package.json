@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@begin/data": "^1.2.0",
+    "@begin/data": "latest",
     "rollup": "^2.0.2"
   }
 }
