@@ -5,33 +5,3 @@ updates:
   schedule:
     interval: daily
   open-pull-requests-limit: 99
-
-- package-ecosystem: npm
-  directory: "/src/http/get-about/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 99
-
-- package-ecosystem: npm
-  directory: "/src/http/get-cache/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 99
-
-- package-ecosystem: npm
-  directory: "/src/http/get-index/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 99
-
-- package-ecosystem: npm
-  directory: "/src/http/get-modules-000type-000module/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 99
-
-- package-ecosystem: npm
-  directory: "/src/http/post-cache/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 99
