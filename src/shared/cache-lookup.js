@@ -1,4 +1,4 @@
-const read = require('@architect/shared/cache-read.js')
+const read = require('./cache-read.js')
 
 module.exports = async function lookup({ name }) {
   let debug = process.env.DEBUG

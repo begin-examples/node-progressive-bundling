@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "@begin/data": "latest",
-    "rollup": "^2.0.2"
-  }
-}

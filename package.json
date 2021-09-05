@@ -5,8 +5,12 @@
     "test": "NODE_ENV=testing tape test/*-test.js | tap-spec"
   },
   "dependencies": {
-    "@architect/sandbox": "latest",
-    "@begin/data": "latest",
+    "@architect/sandbox": "^4.0.1",
+    "@begin/data": "^3.0.0",
+    "esm": "^3.2.25",
+    "preact": "^10.5.14",
+    "preact-render-to-string": "^5.1.19",
+    "rollup": "^2.56.3",
     "tap-spec": "^5.0.0",
     "tape": "^5.0.1"
   },

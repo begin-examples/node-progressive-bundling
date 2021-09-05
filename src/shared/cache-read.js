@@ -1,4 +1,3 @@
-const { join } = require('path')
 const { existsSync } = require('fs')
 
 const data = require('@begin/data')
@@ -12,7 +11,7 @@ module.exports = async function read({ name }) {
   })
 
   // look for the entry file in the path
-  if (cache == false && existsSync(path({ name })) == false)
+  if (!cache && !existsSync(path({ name })))
       throw ReferenceError(`not_found: ${ name }`)
 
   return cache

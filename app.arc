@@ -1,5 +1,5 @@
 @app
-jump-nwl
+node-progressive-bundling
 
 @static
 folder public

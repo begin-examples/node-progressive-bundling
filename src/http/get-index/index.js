@@ -1,7 +1,7 @@
 require = require('esm')(module)
+const renderToString = require('preact-render-to-string')
 const lookup = require('@architect/shared/cache-lookup.js')
 const HTML = require('@architect/views/document/html.js').default
-const renderToString = require('preact-render-to-string')
 const { html } = require('@architect/views/modules/vendor/preact.js')
 const Home = require('@architect/views/modules/pages/home.js').default
 
