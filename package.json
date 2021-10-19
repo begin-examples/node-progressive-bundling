@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "@architect/sandbox": "^4.2.1",
-    "@begin/data": "^3.0.3",
+    "@begin/data": "^3.0.4",
     "esm": "^3.2.25",
     "preact": "^10.5.15",
     "preact-render-to-string": "^5.1.19",
