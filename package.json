@@ -10,7 +10,7 @@
     "esm": "^3.2.25",
     "preact": "^10.5.15",
     "preact-render-to-string": "^5.1.19",
-    "rollup": "^2.58.1",
+    "rollup": "^2.58.3",
     "tap-spec": "^5.0.0",
     "tape": "^5.0.1"
   },
