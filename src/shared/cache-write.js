@@ -17,7 +17,7 @@ module.exports = async function write({ name, source }) {
 
   // write local when running local
   console.time('write')
-  if (process.env.NODE_ENV === 'testing') {
+  if (process.env.ARC_ENV === 'testing'|| process.env.NODE_ENV==='testing') {
     let pathToPublic = path.join(__dirname, '..', '..', '..', '..', '..', '..', 'public', fingerprint)
     fs.writeFileSync(pathToPublic, source)
   }
@@ -27,7 +27,7 @@ module.exports = async function write({ name, source }) {
     let result = await s3.putObject({
       ACL: 'public-read',
       Bucket: process.env.ARC_STATIC_BUCKET,
-      Key: `${ process.env.ARC_STATIC_FOLDER }/${ fingerprint }`,
+      Key: `${ fingerprint }`,
       Body: source,
       ContentType: `text/${  extension === 'js'? 'javascript': 'css' }; charset=UTF-8`,
       CacheControl: 'max-age=315360000',
