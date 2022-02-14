@@ -12,7 +12,7 @@
     "preact-render-to-string": "~4.1.0",
     "rollup": "^2.67.2",
     "tap-spec": "^5.0.0",
-    "tape": "^5.5.0"
+    "tape": "^5.5.2"
   },
   "version": "0.0.1"
 }
