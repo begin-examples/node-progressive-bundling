@@ -8,7 +8,7 @@
     "@architect/sandbox": "^4.5.2",
     "@begin/data": "^3.0.4",
     "esm": "^3.2.25",
-    "preact": "~10.7.2",
+    "preact": "~10.8.2",
     "preact-render-to-string": "~4.1.0",
     "rollup": "^2.72.1",
     "tap-spec": "^5.0.0",
